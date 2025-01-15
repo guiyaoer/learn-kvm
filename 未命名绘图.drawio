@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="26.0.5">
   <diagram name="第 1 页" id="i1DuTGr0fwCpjBT0c2Ri">
-    <mxGraphModel dx="1018" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1064" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -37,6 +37,9 @@
         <mxCell id="5pdY61iCzS-6dg_9tEd6-12" value="试生产/出厂测试" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="510" y="340" width="100" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="5pdY61iCzS-6dg_9tEd6-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5pdY61iCzS-6dg_9tEd6-14" target="5pdY61iCzS-6dg_9tEd6-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="5pdY61iCzS-6dg_9tEd6-14" value="机型引入测试" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="655" y="340" width="90" height="60" as="geometry" />
         </mxCell>
@@ -50,18 +53,48 @@
           <mxGeometry x="255" y="400" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5pdY61iCzS-6dg_9tEd6-20" value="2023/12" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="379" y="400" width="70" height="30" as="geometry" />
+          <mxGeometry x="394" y="398" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5pdY61iCzS-6dg_9tEd6-21" value="2024/2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="655" y="398" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="5pdY61iCzS-6dg_9tEd6-28" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;" vertex="1" parent="1">
-          <mxGeometry x="560" y="400" width="150" height="60" as="geometry" />
+        <mxCell id="5pdY61iCzS-6dg_9tEd6-28" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;strokeColor=#FF9933;" vertex="1" parent="1">
+          <mxGeometry x="400" y="400" width="360" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="5pdY61iCzS-6dg_9tEd6-29" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="5pdY61iCzS-6dg_9tEd6-29" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#FF9933;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="560" y="440" as="sourcePoint" />
-            <mxPoint x="560" y="400" as="targetPoint" />
+            <mxPoint x="400" y="430" as="sourcePoint" />
+            <mxPoint x="400" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5pdY61iCzS-6dg_9tEd6-31" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=default;routingCenterX=-0.5;rotation=-180;fillStyle=dashed;strokeColor=#FF9933;" vertex="1" parent="1">
+          <mxGeometry x="400" y="320" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5pdY61iCzS-6dg_9tEd6-35" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#FF9933;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="320" as="sourcePoint" />
+            <mxPoint x="560" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5pdY61iCzS-6dg_9tEd6-37" value="固件bug&lt;div&gt;1、大量IO持续读，导致空闲块耗尽，掉盘，引起数据丢失，后续坏盘。&lt;/div&gt;&lt;div&gt;2、大量IO并发写，磨损均衡和写发生死锁，掉盘。&lt;/div&gt;&lt;div&gt;3、热插盘后，寄存器未初始化，导致盘不识别。&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="424" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5pdY61iCzS-6dg_9tEd6-39" value="产品上线" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="780" y="340" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5pdY61iCzS-6dg_9tEd6-41" value="2024/3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="795" y="400" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5pdY61iCzS-6dg_9tEd6-43" value="" style="line;strokeWidth=1;direction=south;html=1;strokeColor=#FF9933;" vertex="1" parent="1">
+          <mxGeometry x="755" y="370" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5pdY61iCzS-6dg_9tEd6-47" value="" style="line;strokeWidth=1;direction=south;html=1;strokeColor=#FF9933;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="625" y="250" width="10" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5pdY61iCzS-6dg_9tEd6-48" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#FF9933;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="699.88" y="320" as="sourcePoint" />
+            <mxPoint x="699.88" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
