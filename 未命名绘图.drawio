@@ -886,6 +886,9 @@
         <mxCell id="5pdY61iCzS-6dg_9tEd6-426" value="脏数据" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="560" y="100" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="5pdY61iCzS-6dg_9tEd6-428" value="示例闪存有2个通道，3个块，每个块里面4个页&lt;div&gt;&lt;br&gt;&lt;div&gt;OP块为预留容量块，用户无法操作。&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="710" y="55" width="270" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
